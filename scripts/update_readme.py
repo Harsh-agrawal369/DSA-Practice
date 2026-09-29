@@ -35,8 +35,8 @@ def solution_row(path: Path) -> tuple[str, str, str]:
     url_match = URL_PATTERN.search(source)
     url = url_match.group(0).rstrip("'\")>,.") if url_match else ""
     relative_path = path.relative_to(ROOT).as_posix()
-    link = f"[{path.name}]({relative_path})"
-    return title, link, url
+    solution_link = f"[{path.name}]({relative_path})"
+    return title, url, solution_link
 
 
 def read_questions() -> list[str]:
@@ -55,8 +55,11 @@ def render_solutions() -> str:
     if not rows:
         return "No solution files yet. Add a `.py` file in a topic folder to list it here."
 
-    lines = ["| Problem | Solution | Link |", "| --- | --- | --- |"]
-    lines.extend(f"| {title} | {link} | {url or '-'} |" for title, link, url in rows)
+    lines = ["| Problem | LeetCode | Solution |", "| --- | --- | --- |"]
+    lines.extend(
+        f"| {title} | {f'[LeetCode]({url})' if url else '-'} | {solution_link} |"
+        for title, url, solution_link in rows
+    )
     return "\n".join(lines)
 
 
@@ -87,7 +90,7 @@ A collection of data structures and algorithms questions and Python solutions.
 
 3. Run `python scripts/update_readme.py` to refresh this page.
 
-The generator uses each solution file's first docstring line for the problem name and the first URL it finds for the problem link.
+The generator uses each solution file's first docstring line for the problem name, the first URL it finds for the embedded LeetCode link, and the file path for the embedded repository link.
 
 ## Questions Backlog
 

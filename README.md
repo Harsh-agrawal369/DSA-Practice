@@ -15,7 +15,7 @@ A collection of data structures and algorithms questions and Python solutions.
 
 3. Run `python scripts/update_readme.py` to refresh this page.
 
-The generator uses each solution file's first docstring line for the problem name and the first URL it finds for the problem link.
+The generator uses each solution file's first docstring line for the problem name, the first URL it finds for the embedded LeetCode link, and the file path for the embedded repository link.
 
 ## Questions Backlog
 
@@ -24,5 +24,7 @@ The generator uses each solution file's first docstring line for the problem nam
 ## Solutions
 
 <!-- SOLUTIONS:START -->
-No solution files yet. Add a `.py` file in a topic folder to list it here.
+| Problem | LeetCode | Solution |
+| --- | --- | --- |
+| Find Missing and Repeated Values | [LeetCode](https://leetcode.com/problems/find-missing-and-repeated-values/description/) | [find_missing_and_repeated_values.py](Arrays/find_missing_and_repeated_values.py) |
 <!-- SOLUTIONS:END -->
