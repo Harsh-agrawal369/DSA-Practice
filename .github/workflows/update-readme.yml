@@ -2,7 +2,6 @@ name: Update README
 
 on:
   push:
-    branches: [main, ApnaCollege-DSA-Sheet]
     paths:
       - '**.py'
       - 'scripts/update_readme.py'
