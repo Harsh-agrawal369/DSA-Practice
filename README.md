@@ -24,5 +24,7 @@ The generator uses each solution file's first docstring line for the problem nam
 ## Solutions
 
 <!-- SOLUTIONS:START -->
-No solution files yet. Add a `.py` file in a topic folder to list it here.
+| Problem | Solution | Link |
+| --- | --- | --- |
+| Find Missing And Repeated Values | [find_missing_and_repeated_values.py](Arrays/find_missing_and_repeated_values.py) | - |
 <!-- SOLUTIONS:END -->
