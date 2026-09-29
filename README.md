@@ -1,6 +1,6 @@
 # DSA Practice
 
-DSA Practice is a collection of LeetCode solutions written in Python. Solutions are organized by domain folders such as `Arrays`, and the README solution table is generated from the Python files in the repository.
+Practice common data structures and algorithms with Python solutions to LeetCode problems. Solutions are organized by domain, and the README index is generated automatically from the files in this repository.
 
 ## Setup
 
@@ -50,6 +50,17 @@ For local README updates whenever a Python file is saved, open `.vscode/tasks.js
 ```
 
 Then allow automatic tasks when VS Code asks. This local watcher is optional; the GitHub Actions updater still works without it.
+
+## CI/CD Flow
+
+1. Create or delete a solution `.py` file and commit your change locally.
+2. Run `git push`.
+3. GitHub Actions checks out the branch and runs `scripts/update_readme.py`.
+4. The script rebuilds the Solutions table from all available solution files.
+5. GitHub Actions commits the updated README to the remote branch.
+6. The local post-push hook detects that commit and runs `git pull --rebase`.
+
+This keeps the README synchronized without manually adding or removing question entries.
 
 ## Solutions
 
