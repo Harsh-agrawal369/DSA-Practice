@@ -68,4 +68,5 @@ This keeps the README synchronized without manually adding or removing question 
 | Domain | Problem | LeetCode | Solution |
 | --- | --- | --- | --- |
 | Arrays | Find Missing And Repeated Values | [LeetCode](https://leetcode.com/problems/find-missing-and-repeated-values/description/) | [find-missing-and-repeated-values.py](Arrays/find-missing-and-repeated-values.py) |
+| Arrays | Merge Sorted Array | [LeetCode](https://leetcode.com/problems/merge-sorted-array/description/) | [merge-sorted-array.py](Arrays/merge-sorted-array.py) |
 <!-- SOLUTIONS:END -->
