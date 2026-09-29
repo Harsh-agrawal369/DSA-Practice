@@ -8,7 +8,7 @@
             "isBackground": false,
             "problemMatcher": [],
             "runOptions": {
-                "runOn": "folderOpen"
+                // "runOn": "folderOpen"
             }
         }
     ]
