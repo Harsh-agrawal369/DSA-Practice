@@ -1,30 +1,21 @@
 # DSA Practice
 
-A collection of data structures and algorithms questions and Python solutions.
+A collection of LeetCode questions and Python solutions organized by domain.
 
 ## Workflow
 
-1. Add a solution inside its topic folder, for example `Arrays/find_missing_and_repeated_values.py`.
-2. Start the file with a docstring containing the problem title and URL:
+1. Create a `.py` file inside a domain folder using the exact LeetCode question name in kebab-case. For example:
 
-   ```python
-   """Find Missing and Repeated Values
-   https://leetcode.com/problems/find-missing-and-repeated-values/description/
-   """
-   ```
+   `Arrays/find-missing-and-repeated-values.py`
 
-3. Run `python scripts/update_readme.py` to refresh this page.
+2. Save the file. The local README watcher updates this page automatically.
 
-The generator uses each solution file's first docstring line for the problem name, the first URL it finds for the embedded LeetCode link, and the file path for the embedded repository link.
-
-## Questions Backlog
-
-- Q1 - https://leetcode.com/problems/find-missing-and-repeated-values/description/
+You can also run `python scripts/update_readme.py` manually. The README uses the filename to create the LeetCode URL and the parent folder to determine the domain.
 
 ## Solutions
 
 <!-- SOLUTIONS:START -->
-| Problem | LeetCode | Solution |
-| --- | --- | --- |
-| Find Missing and Repeated Values | [LeetCode](https://leetcode.com/problems/find-missing-and-repeated-values/description/) | [find_missing_and_repeated_values.py](Arrays/find_missing_and_repeated_values.py) |
+| Domain | Problem | LeetCode | Solution |
+| --- | --- | --- | --- |
+| Arrays | Find Missing And Repeated Values | [LeetCode](https://leetcode.com/problems/find-missing-and-repeated-values/description/) | [find-missing-and-repeated-values.py](Arrays/find-missing-and-repeated-values.py) |
 <!-- SOLUTIONS:END -->

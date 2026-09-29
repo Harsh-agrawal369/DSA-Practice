@@ -1,7 +1,4 @@
-"""Find Missing and Repeated Values
-https://leetcode.com/problems/find-missing-and-repeated-values/description/
-"""
-
+# Naive solution flag based
 
 class Solution:
     def findMissingAndRepeatedValues(self, grid: List[List[int]]) -> List[int]:
