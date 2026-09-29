@@ -55,7 +55,7 @@ Then allow automatic tasks when VS Code asks. This local watcher is optional; th
 
 1. Create or delete a solution `.py` file and commit your change locally.
 2. Run `git push`.
-3. GitHub Actions checks out the branch and runs `scripts/update_readme.py`.
+3. GitHub Actions checks out the branch and runs `scripts/update_readme.py`. The workflow runs for any branch that contains `.github/workflows/update-readme.yml`.
 4. The script rebuilds the Solutions table from all available solution files.
 5. GitHub Actions commits the updated README to the remote branch.
 6. The local post-push hook detects that commit and runs `git pull --rebase`.
