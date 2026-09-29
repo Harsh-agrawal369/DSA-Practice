@@ -18,5 +18,4 @@ You can also run `python scripts/update_readme.py` manually. The README uses the
 | Domain | Problem | LeetCode | Solution |
 | --- | --- | --- | --- |
 | Arrays | Find Missing And Repeated Values | [LeetCode](https://leetcode.com/problems/find-missing-and-repeated-values/description/) | [find-missing-and-repeated-values.py](Arrays/find-missing-and-repeated-values.py) |
-| Arrays | Majority Element | [LeetCode](https://leetcode.com/problems/majority-element/description/) | [majority-element.py](Arrays/majority-element.py) |
 <!-- SOLUTIONS:END -->
